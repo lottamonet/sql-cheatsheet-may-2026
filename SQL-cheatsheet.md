@@ -38,11 +38,16 @@ CREATE TABLE friends (
 ### 3. `INSERT INTO` — assigned to: Arianne
 
 **Description:** 
-
+INSERT INTO is used in SQL to add new rows (records) to a table.
+Think of INSERT INTO as saying: "Add this new record to the table."
 **Example:**
 
 ```sql
+INSERT INTO table_name (column1, column2, column3)
+VALUES (value1, value2, value3);
 
+INSERT INTO pets (name, age, species)
+VALUES ('Whiskers', 2, 'Cat');
 ```
 
 ### 4. `UPDATE` — assigned to: Carlotta

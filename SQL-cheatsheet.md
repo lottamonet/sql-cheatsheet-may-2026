@@ -45,14 +45,17 @@ CREATE TABLE friends (
 
 ```
 
+
 ### 4. `UPDATE` — assigned to: Carlotta
 
-**Description:**
+**Description:** `UPDATE` is used to modify existing data in a table. It changes the value of one or more columns for rows that match a specified condition. It is important to set the 'WHERE' clause when updating so that every row in the table is affected by the change.
 
 **Example:**
 
 ```sql
-
+UPDATE friends
+SET city = 'Novato'
+WHERE name = 'Carlotta';
 ```
 
 ### 5. `DELETE FROM` — assigned to: Hailey

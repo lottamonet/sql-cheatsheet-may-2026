@@ -90,10 +90,17 @@ WHERE condition;
 
 **Description:**
 
+An INNER JOIN returns only the rows that have matching values in both tables. Rows without a match in either table are excluded from the result.
+
 **Example:**
 
 ```sql
-
+SELECT
+    customers.customer_name,
+    orders.order_id
+FROM customers
+INNER JOIN orders
+    ON customers.customer_id = orders.customer_id;
 ```
 
 ### 9. `LIMIT` — assigned to: Seth

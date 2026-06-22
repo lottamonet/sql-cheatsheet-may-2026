@@ -112,13 +112,20 @@ INNER JOIN orders
 ```
 
 ### 9. `LIMIT` — assigned to: Seth
-**Description:**
+**Description:** LIMITS the number of values that are shown
 
 **Example:**
 
 ```sql
-
+SELECT * 
+FROM friends 
+WHERE birthday DATE >= 19800101
+LIMIT 5;
 ```
+<!-- CREATE TABLE friends (
+  friend_id SERIAL PRIMARY KEY,
+  name VARCHAR,
+  birthday DATE -->
 
 ### 10. `ON CONFLICT` — assigned to: Shirley
 
